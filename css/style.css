@@ -265,6 +265,7 @@
 .service-item {
     position: relative;
     overflow: hidden;
+    background-color: #1b2a45;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
 }
 
@@ -289,6 +290,13 @@
     color: #FFFFFF;
     background: var(--primary);
     border-color: var(--primary);
+}
+
+.service-item h4{
+    color: #FFFFFF !important
+}
+.service-item p{
+    color: #747474;
 }
 
 
