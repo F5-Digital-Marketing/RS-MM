@@ -369,6 +369,15 @@ top: 17px;
     background: linear-gradient(#09223f41, #15233cd9), url(https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/RS%20MANUTEN%C3%87%C3%83O/rs-manuten%C3%A7%C3%A3o-e-montagens-bga) center center no-repeat;
     background-size: cover;
     align-items: center;}
+    
+
+@media (min-width: 1600px) {.appointment{
+    height: 700px;
+}}  
+@media (max-width: 661x) {.appointment{
+    background-position-x:2px;
+}}
+
 
 
 /*** Team ***/
