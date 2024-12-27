@@ -550,3 +550,18 @@ top: 17px;
 .footer .copyright a:hover {
     color: #FFFFFF;
 }
+
+
+
+.masked {
+    width: 100px;
+    height: 100px;
+    background-color: #8cffa0;
+    margin: 20px;
+    border: 20px solid #8ca0ff;
+    padding: 20px;
+  
+    mask-image: url(../img/icon/LOGO-WEB.svg);
+    mask-size: 100% 100%;
+    mask-clip: border-box;
+  }
