@@ -20,6 +20,11 @@ overflow-x: hidden;
     z-index: 99;
 }
 
+.display-6{
+    color: var(--dark);
+
+}
+
 
 .w13{
     display: flex;
@@ -120,6 +125,7 @@ overflow-x: hidden;
 }
 
 .navbar .navbar-nav .nav-link {
+    font-size: 0.9rem;
     margin-left: 25px;
     padding: 10px 0;
     color: #696E77;
@@ -184,7 +190,7 @@ left: 100px;
 top: 17px;
 
 }
-@media (max-width: 1199px) {
+@media (max-width: 999px) {
     .img-xp{
         height: 95%;
         left: 20px;
@@ -192,7 +198,14 @@ top: 17px;
     }
 
     }
-
+    @media (max-width: 400px) {
+        .img-xp{
+            height: 72%;
+            left: 19px;
+            top: 108px;
+        }
+    
+        }
 
 
 /*** Header ***/
