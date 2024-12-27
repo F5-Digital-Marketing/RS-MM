@@ -71,6 +71,7 @@ overflow-x: hidden;
 .btn.btn-secondary,
 .btn.btn-outline-secondary:hover {
     color: #FFFFFF;
+    font-size: 1rem;
 }
 
 .btn.btn-primary:hover {
@@ -305,7 +306,7 @@ top: 17px;
 }
 
 .container.facts .facts-text {
-    background: linear-gradient(rgba(1, 95, 201, .9), rgba(1, 95, 201, .9)), url(../img/carousel-1.jpg) center right no-repeat;
+    background: linear-gradient(rgba(1, 94, 201, 0.226), rgba(1, 95, 201, .9)), url(../img/icon/LOGO-WEB.svg) center right no-repeat;
     background-size: cover;
 }
 
@@ -321,6 +322,10 @@ top: 17px;
     flex-direction: column;
     justify-content: center;
 }
+
+
+#servicos{}
+
 
 
 /*** Service ***/
@@ -366,7 +371,7 @@ top: 17px;
 .appointment {
     display: flex;
     height: 500px;
-    background: linear-gradient(#09223f41, #15233cd9), url(https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/RS%20MANUTEN%C3%87%C3%83O/rs-manuten%C3%A7%C3%A3o-e-montagens-bga) center center no-repeat;
+    background: linear-gradient(#09223f41, #15233cd9), url(https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/RS%20MANUTEN%C3%87%C3%83O/rs-manuten%C3%A7%C3%A3o-e-montagens-banner) center center no-repeat;
     background-size: cover;
     align-items: center;}
     
