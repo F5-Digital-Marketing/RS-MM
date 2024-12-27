@@ -176,6 +176,24 @@ overflow-x: hidden;
     }
 }
 
+/*** xp ***/
+
+.img-xp{
+height: 80%;
+left: 100px;
+top: 17px;
+
+}
+@media (max-width: 1199px) {
+    .img-xp{
+        height: 95%;
+        left: 20px;
+        top: 20px;
+    }
+
+    }
+
+
 
 /*** Header ***/
 .carousel-caption {
