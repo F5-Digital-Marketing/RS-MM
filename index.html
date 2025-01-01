@@ -560,9 +560,89 @@ background-color: #7bc7d6;
           We're Award Winning Insurance Company
         </h1>
       </div>
-      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
-        <div class="bg-light rounded p-5">
-          <div class="row g-4">       
+      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">      
+          <div class="row g-4"> 
+            <style>
+              .carousel-wrapper {
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+                --width: 160px;
+                --gap: 15;
+                --num-items: 8;
+                --ani-offset: calc(var(--width) * var(--num-items) * -1);
+                --ani-speed: 20s;
+                width: 80%;
+                overflow-x: hidden;
+                position: relative;
+              }
+              
+              .carousel-wrapper::before,
+              .carousel-wrapper::after {
+                content: '';
+                position: relative;
+                width: 20%;
+                height: 100%;
+                z-index: 1;
+                top: 0;
+              }
+              
+              .carousel-wrapper::before {
+                left: 0;
+                background-image:  linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+              }
+              
+              .carousel-wrapper::after {
+                right: 0;
+                background-image:  linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+              }
+              
+              @media screen and (max-width:991px) {
+                .carousel-wrapper {
+                  Width: 100%
+                }
+              }
+              
+              .carousel {
+                display: flex;
+                align-items: center;
+                animation: slide var(--ani-speed) linear infinite;
+              }
+              
+              .item {
+                flex: 1 0 var(--width);
+                text-align: center;
+                padding: 1rem;
+              }
+              
+              .item>img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+              }
+              
+              @keyframes slide {
+                100% {
+                  transform: translateX(var(--ani-offset))
+                }
+              }</style>
+            <div class="carousel-wrapper">
+              <div class="carousel">
+                <div class="item"><img src="./f5ws_files\SVG\cloudflare.svg" loading="lazy" alt="cloudflare">
+                </div>
+                <div class="item"><img src="./f5ws_files\SVG\semrush.svg" loading="lazy" alt="semrush"></div>
+                <div class="item"><img src="./f5ws_files\SVG\make.svg" loading="lazy" alt="Make"></div>
+                <div class="item"><img src="./f5ws_files\SVG\many.svg" loading="lazy" alt="Many"></div>
+                <div class="item"><img src="./f5ws_files\SVG\cloudflare.svg" loading="lazy" alt="cloudflare"></div>
+                <div class="item"><img src="./f5ws_files\SVG\semrush.svg" loading="lazy" alt="semrush"></div>
+                <div class="item"><img src="./f5ws_files\SVG\make.svg" loading="lazy" alt="Make"></div>
+                <div class="item"><img src="./f5ws_files\SVG\many.svg" loading="lazy" alt="Many"></div>
+                <div class="item"><img src="./f5ws_files\SVG\cloudflare.svg" loading="lazy" alt="cloudflare"></div>
+                <div class="item"><img src="./f5ws_files\SVG\semrush.svg" loading="lazy" alt="semrush"></div>
+                <div class="item"><img src="./f5ws_files\SVG\make.svg" loading="lazy" alt="Make"></div>
+                <div class="item"><img src="./f5ws_files\SVG\many.svg" loading="lazy" alt="Many"></div>
+                <div class="item"><img src="./f5ws_files\SVG\cloudflare.svg" loading="lazy" alt="cloudflare"></div>
+                <div class="item"><img src="./f5ws_files\SVG\semrush.svg" loading="lazy" alt="semrush"></div>
+              </div>      
     </div>
         </div>
       </div>
