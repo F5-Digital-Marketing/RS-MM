@@ -47,8 +47,15 @@ overflow-x: hidden;
 
 
 #trabalhe{
-    background: linear-gradient(296deg, rgb(123 199 214) 33%, rgba(8, 100, 136, 0) 33%);
+    background: linear-gradient(296deg, rgb(123 199 214) 37%, rgba(8, 100, 136, 0) 19%);
 }
+@media (max-width: 995px){
+    #trabalhe-mobi {
+        display: flexbox;
+        flex-direction: row-reverse !important
+    }
+}
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
