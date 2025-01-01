@@ -2,7 +2,7 @@
 
 
 :root {
-    --primary: #015FC9;
+    --primary: #00a0e4;
     --secondary: #0DD3F1;
     --light: #F6F7FC;
     --dark: #15233C;
@@ -46,6 +46,11 @@ overflow-x: hidden;
         }}
 
 
+
+
+#trabalhe{
+    background: linear-gradient(296deg, rgb(123 199 214) 33%, rgba(8, 100, 136, 0) 33%);
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -582,8 +587,7 @@ top: 17px;
     max-width: 600px;
     margin: auto;
     padding: 50px 70px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-radius: 20px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
 }
 
@@ -666,3 +670,4 @@ top: 17px;
         line-height: 70px;
     }
 }
+
