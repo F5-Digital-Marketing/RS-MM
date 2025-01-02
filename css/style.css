@@ -157,16 +157,16 @@ overflow-x: hidden;
     vertical-align: middle;
     margin-left: 8px;
 }
-.navbar>h5{
-    font-size:1rem;
+.navbar h5{
+    font-size:1rem!important;
 }
 
 @media (max-width: 991.98px) {
     .navbar .navbar-brand img {
         max-height: 45px;
     }
-    .navbar>h5{
-        font-size:0.7rem;
+    .navbar h5{
+        font-size:0.7rem!important;
     }
 
     .navbar .navbar-nav {
