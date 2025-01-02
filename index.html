@@ -505,20 +505,20 @@ class="container-fluid appointment mb-6 pb-5 pt-5"
         <div id="trabalhe-mobi" class="flex row g-5">
           <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
               <div class="registration-form">
-                <form action="https://sandbox.api.mailtrap.io/api/send/3370176" method="POST" enctype="multipart/form-data">
+                <form action="https://formsubmit.co/rsmanutencaoindustriais@gmail.com" method="POST" enctype="multipart/form-data">
                       <h3 class="mb-2">Trabalhe Conosco
                       </h3>
                       <p class="mb-4">
                         Deixe seus dados para nossas vagas em aberto ou para nosso Banco de Talentos.</p>
                         <div>
                     <div class="form-group">
-                        <input type="text" class="form-control item" id="name" placeholder="Nome Completo">
+                        <input type="text" name="name" class="form-control item" id="name" placeholder="Nome Completo">
                     </div>                                 
                     <div class="form-group">
-                        <input type="Number" class="form-control item" id="number" placeholder="Contato">
+                        <input type="Number" class="form-control item" name="phone" id="number" placeholder="Contato">
                     </div>
                     <div class="form-group">
-                      <select id="vaga" class="form-control item" style="height: 55px;">
+                      <select id="vaga" name="vaga" class="form-control item" style="height: 55px;">
                         <option selected="">Vaga Desejada</option>
                         <option value="1">Soldador</option>
                         <option value="2">Mecânico Montador</option>
@@ -527,7 +527,7 @@ class="container-fluid appointment mb-6 pb-5 pt-5"
                     </div>
                     <div class="form-group">
                     <label  for="file">Enviar curriculo</label>
-                    <input class="form-control item" type="file" id="file" name="file">
+                    <input name="curriculo" class="form-control item" type="file" id="file" name="file">
                   </div>
                     <div class="form-group">
                       <input type="hidden" name="_gotcha" style="display:none !important">
