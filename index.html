@@ -532,13 +532,13 @@ class="container-fluid appointment mb-6 pb-5 pt-5"
                         Deixe seus dados para nossas vagas em aberto ou para nosso Banco de Talentos.</p>
                         <div>
                     <div class="form-group">
-                        <input type="text" name="Nome" class="form-control item" id="name" placeholder="Nome Completo">
+                        <input required type="text" name="Nome" class="form-control item" id="name" placeholder="Nome Completo">
                     </div>                                 
                     <div class="form-group">
-                        <input type="Number" class="form-control item" name="Contato" id="number" placeholder="Contato">
+                        <input required type="Number" class="form-control item" name="Contato" id="number" placeholder="Contato">
                     </div>
                     <div class="form-group">
-                      <select id="vaga" name="Vaga" class="form-control item" style="height: 55px;">
+                      <select required id="vaga" name="Vaga" class="form-control item" style="height: 55px;">
                         <option selected="">Vaga Desejada</option>
                         <option value="Soldador">Soldador</option>
                         <option value="Mecânico Montador">Mecânico Montador</option>
@@ -556,24 +556,17 @@ class="container-fluid appointment mb-6 pb-5 pt-5"
                     <div class="form-group">
                       <input type="hidden" name="_gotcha" style="display:none !important">
                       <div class="button-wrapper">
-                        <button class="slide-button">
+                        <button  type="submit"  class="slide-button">
                             <span class="slide-content">
-                                <span class="text">Download</span>
+                                <span class="text">Enviar</span>
                                 <span class="icon">
                                     <i class="fas fa-arrow-right"></i>
                                 </span>
                             </span>
                         </button>
                     </div>
-                        <button type="submit" class="btn btn-block create-account">Enviar</button>
                     </div>
                 </form>
-                <script>               
-$(document).ready(function(){
-    $('#birth-date').mask('00/00/0000');
-    $('#phone-number').mask('0000-0000');
-   })
-                </script>
               </div>
             </div>
           </div>
