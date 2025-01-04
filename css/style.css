@@ -55,6 +55,11 @@ overflow-x: hidden;
         flex-direction: row-reverse !important
     }
 }
+#services-map{
+    display: flex;
+}
+@media (max-width: 995px){
+    #services-map{flex-direction: column-reverse;}}
 
 /*** Spinner ***/
 #spinner {
