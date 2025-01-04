@@ -698,17 +698,19 @@ top: 17px;
     transform: rotate(45deg) translateY(100%);
 }
 
-.slide-button {
+.slide-button  {
+    width: 50%;
     position: relative;
-    padding: 1rem 1.5rem;
-    font-size: 1.1rem;
-    color:var(--dark);
+    padding: 0.6rem 1.1rem;
+    font-size: 1.rem;
+    color: var(--dark);
     background: none;
     border: 2px solid #60a5fa;
-    border-radius: 8px;
+    border-radius: 66px;
     cursor: pointer;
     overflow: hidden;
 }
+
 
 .slide-content {
     display: flex;
