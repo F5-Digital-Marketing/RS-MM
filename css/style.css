@@ -214,7 +214,7 @@ top: 17px;
 }
 @media (max-width: 999px) {
     .img-xp{
-        height: 95%;
+        height: 60vh;
         left: 20px;
         top: 20px;
     }
@@ -222,7 +222,7 @@ top: 17px;
     }
     @media (max-width: 400px) {
         .img-xp{
-            height: 72%;
+            height: 50vh;
             left: 19px;
             top: 108px;
         }
