@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap:https://rsmanutencaoemontagens.com.br/sitemap.xml
