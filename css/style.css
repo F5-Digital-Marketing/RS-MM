@@ -710,7 +710,6 @@ form h3,p{
     padding: 0.6rem 1.1rem;
     font-size: 1.rem;
     color: var(--dark);
-    background: none;
     border: 2px solid var(--primary);
     border-radius: 66px;
     cursor: pointer;
