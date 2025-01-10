@@ -387,7 +387,6 @@ top: 17px;
     color: #c4c4c4;
 }
 
-
 /*** Appointment ***/
 .appointment {
     display: flex;
@@ -395,32 +394,24 @@ top: 17px;
     background: linear-gradient(#09223f41, #15233cd9), url(https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/RS%20MANUTEN%C3%87%C3%83O/rs-manuten%C3%A7%C3%A3o-e-montagens-banner) center center no-repeat;
     background-size: cover;
     align-items: center;}
-    
-
 @media (min-width: 1600px) {.appointment{
     height: 700px;
 }}  
 @media (max-width: 661x) {.appointment{
     background-position-x:2px;
 }}
-
-
-
 /*** Team ***/
 .team-item {
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
 }
-
 .team-item img {
     transition: .5s;
 }
-
 .team-item:hover img {
     transform: scale(1.1);
 }
-
 .team-text {
     position: absolute;
     width: 100%;
@@ -429,12 +420,10 @@ top: 17px;
     opacity: 0;
     transition: .5s;
 }
-
 .team-item:hover .team-text {
     bottom: 0;
     opacity: 1;
 }
-
 .team-item a.btn {
     color: var(--primary);
 }
@@ -444,8 +433,6 @@ top: 17px;
     background: var(--primary);
     border-color: var(--primary);
 }
-
-
 /*** Testimonial ***/
 .animated.pulse {
     animation-duration: 1.5s;
@@ -489,10 +476,14 @@ top: 17px;
     bottom: 10%;
     right: 10%;
 }
-
+/*
 .testimonial-carousel .owl-item img {
     width: 300px;
     height: 300px;
+}*/
+
+.owl-carousel .owl-item img{
+    width: 50%;
 }
 
 .testimonial-carousel .owl-nav {
@@ -525,18 +516,14 @@ top: 17px;
     background-repeat: no-repeat;   
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="%23ffffff" d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>');
 }
-
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
     background: #7bc7d6;
 }
-
-
 /*** Footer ***/
 .footer {
     color: #A7A8B4;
 }
-
 .footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;
@@ -545,9 +532,8 @@ top: 17px;
     color: #A7A8B4;
     font-weight: normal;
     text-transform: capitalize;
-    transition: .3s;
+    transition:3s;
 }
-
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
@@ -586,9 +572,6 @@ top: 17px;
 .footer .copyright a:hover {
     color: #FFFFFF;
 }
-
-
-
 .masked {
     width: 100px;
     height: 100px;
