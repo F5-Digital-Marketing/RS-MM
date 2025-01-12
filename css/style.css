@@ -391,7 +391,7 @@ top: 17px;
 .appointment {
     display: flex;
     height: 500px;
-    background: linear-gradient(#09223f41, #15233cd9), url(https://res.cloudinary.com/dohfsymfd/image/upload/f_auto,q_auto/v1/RS%20MANUTEN%C3%87%C3%83O/rs-manuten%C3%A7%C3%A3o-e-montagens-banner) center center no-repeat;
+    background: linear-gradient(#09223f41, #15233cd9), url(https://res.cloudinary.com/f5ws/image/upload/f_auto,q_auto/v1/RS%20MANUTEN%C3%87%C3%83O/rs-manuten%C3%A7%C3%A3o-e-montagens-industriais) center center no-repeat;
     background-size: cover;
     align-items: center;}
 @media (min-width: 1600px) {.appointment{
@@ -447,14 +447,13 @@ top: 17px;
 .testimonial-right img {
     position: absolute;
     padding: 5px;
-    border: 1px dashed var(--primary);
-    border-radius: 10px;
+    border-radius:50px;
 }
 
 .testimonial-left img:nth-child(1),
 .testimonial-right img:nth-child(3) {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
@@ -462,8 +461,8 @@ top: 17px;
 
 .testimonial-left img:nth-child(2),
 .testimonial-right img:nth-child(2) {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
@@ -471,8 +470,8 @@ top: 17px;
 
 .testimonial-left img:nth-child(3),
 .testimonial-right img:nth-child(1) {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     bottom: 10%;
     right: 10%;
 }
@@ -734,3 +733,74 @@ form h3,p{
     transition: transform 0.3s ease;
 }
 
+
+.carousel-wrapper {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    --width: 160px;
+    --gap: 15;
+    --num-items: 8;
+    --ani-offset: calc(var(--width) * var(--num-items) * -1);
+    --ani-speed: 20s;
+    width: 80%;
+    overflow-x: hidden;
+    position: relative;
+  }
+  
+  .carousel-wrapper::before,
+  .carousel-wrapper::after {
+    content: '';
+    position: relative;
+    width: 20%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+  }
+  
+  .carousel-wrapper::before {
+    left: 0;
+    background-image:  linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+  }
+  
+  .carousel-wrapper::after {
+    right: 0;
+    background-image:  linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+  }
+  
+  @media screen and (max-width:991px) {
+    .carousel-wrapper {
+      Width: 100%
+    }
+  }
+  .carousel {
+    display: flex;
+    align-items: center;
+    animation: slide var(--ani-speed) linear infinite;
+  }
+  
+  .item {
+    flex: 1 0 var(--width);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .item>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  @keyframes slide {
+    100% {
+      transform: translateX(var(--ani-offset))
+    }
+  }
+
+  #marcas{
+    display: none;
+  }
+  @media screen and (max-width:991px) {
+    #marcas {
+      display: contents;
+    }
+  }
