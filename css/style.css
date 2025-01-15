@@ -218,7 +218,7 @@ left: 100px;
 top: 17px;
 
 }
-@media (max-width: 999px) {
+@media (max-width: 1200px) {
     .img-xp{
         height: 60vh;
         left: 20px;
@@ -228,12 +228,19 @@ top: 17px;
     }
     @media (max-width: 400px) {
         .img-xp{
-            height: 50vh;
+            height: 45vh;
             left: 19px;
             top: 108px;
         }
-    
         }
+        @media (max-width: 360px) {
+            .img-xp{
+                height: 35vh;
+                left: 19px;
+                top: 108px;
+            }
+        
+            }
 
 
 /*** Header ***/
