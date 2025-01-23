@@ -540,7 +540,12 @@ border-radius: 15px;
 }*/
 
 .owl-carousel .owl-item img{
-    width: 50%;
+    width:60%;
+}
+@media (max-width: 995px){
+    .owl-carousel .owl-item img{
+        width:90%;   
+    }
 }
 
 .testimonial-carousel .owl-nav {
